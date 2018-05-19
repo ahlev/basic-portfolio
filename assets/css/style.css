@@ -4,6 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("../017-Subtle-light-patterns-Vol04.png")
+
 }
 
 .a {
@@ -15,10 +17,18 @@ a:visited {
     color: #190b74;
 }
 
+.topbar {
+    position: relative;
+    min-width: 100%;
+    background: white;
+    margin:-10px -10px 10px -10px;
+}
+
 .navbar {
     width: 960px;
     margin: 0 auto;
     text-align: center;
+    background-color: white;
 }
 
 .navbuttons {
@@ -81,6 +91,7 @@ a:visited {
     width: 100%;
     background-color: #cccccc;
     min-width: 200px;
+    margin:-10px -10px 10px -10px;
 }
 
 .maincontent {
@@ -93,7 +104,7 @@ a:visited {
     overflow: auto;
     width: 910px;
     min-height: 600px;
-    margin: 30px auto;
+    margin: 5px auto 10%;
 }
 
 .bodycopy {
@@ -118,17 +129,18 @@ h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-
 .headshot {
     overflow: hidden;
     float: left;
     margin: 0px 20px 20px 0px;
 }
 
-
 footer {
     clear: both;
-    padding: 20px 0px 1px 0px; /*THIS CAN BE SMOOTHER*/
+    padding: 20px 0px 1px 0px; 
+    /*This padding kind of works, but the 
+    vertical alignment is still a 
+    little off from what I want." */
     font-size: 9pt;
     background-color: #666666;
     text-align: center;
@@ -136,13 +148,14 @@ footer {
     border-top: 10px solid #4aaaa5;
     margin: auto auto 0 auto;
     width: 100%;
-    
 }
 
 
 
-/* THIS SECTION STYLES 
-THE FORM FIELDS */
+/* THIS SECTION STYLES
+ELEMENTS UNIQUE TO THE 
+THE FORM FIELDS ON THE
+CONTACT PAGE */
 
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -185,18 +198,17 @@ textarea {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     /* not sure why I need to specify this font specifically... isn't
      my <textarea> inside the <body> and shouldn't it pick up the 
-     formatting from the css at the top? */
+     placeholder text formatting from the parent css? */
 }
 
-
 /* THIS SECTION IS FOR 
-THE PORTFOLIO OBJECTS */
+THE ELEMENTS UNIQUE TO THE
+PORTFOLIO PAGE*/
 
 .projectgrid {
     display: grid;
     grid-template-columns: 31% 31%;
     column-gap: 2%;
-
 }
 
 .ptitle {
