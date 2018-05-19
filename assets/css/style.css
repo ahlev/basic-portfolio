@@ -88,10 +88,9 @@ a:visited {
 #navbarborder {
     clear: both;
     height: 3px;
-    width: 100%;
+    width: 100vw;
     background-color: #cccccc;
-    min-width: 200px;
-    margin:-10px -10px 10px -10px;
+    margin:-10px 50px 10px -10px;
 }
 
 .maincontent {
@@ -114,6 +113,7 @@ a:visited {
 .divider {
     height: 2px;
     width: 100%;
+    margin: 0px 0px 10px 0px;
     background-color: lightgray;
 }
 
@@ -209,6 +209,7 @@ PORTFOLIO PAGE*/
     display: grid;
     grid-template-columns: 31% 31%;
     column-gap: 2%;
+    margin: -15px 0px 0px 0px;
 }
 
 .ptitle {
